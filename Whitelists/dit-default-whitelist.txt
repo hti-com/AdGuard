@@ -1,5 +1,5 @@
 ! Title: Whitelist by dacapo it solutions
-! Description: Blockierung auffälliger FQDNs
+! Description: Freigabe bestimmter Domains
 ! Version: 1.0.0
 ! Homepage: https://www.dacapo-it.de
 ! Last modified: 2025-05-06T00:00:00.000Z
