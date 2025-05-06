@@ -6,4 +6,4 @@
 !
 ! Compiled manually for AdGuard
 
-@@||acapo-it.de^
+@@||dacapo-it.de^
