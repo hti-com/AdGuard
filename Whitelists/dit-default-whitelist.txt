@@ -8,3 +8,7 @@
 
 @@||dacapo-it.de^
 @@||s4.highti.com^
+@@||analytics.google.com^
+@@||.t-online.de^
+@@||rt.t-online.de^
+@@||sslout.de^
