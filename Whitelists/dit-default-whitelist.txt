@@ -56,3 +56,6 @@
 @@||ws.microsoft.com^
 @@||sls.update.microsoft.com^
 @@||fe3cr.delivery.mp.microsoft.com^
+@@||browser.pipe.aria.microsoft.com^
+@@||web.vortex.data.microsoft.com^
+@@||target.microsoft.com^
