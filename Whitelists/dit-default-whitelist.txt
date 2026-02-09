@@ -48,3 +48,11 @@
 @@||microsoft.com^
 @@||go.microsoft.com^
 @@||login.live.com^
+@@||displaycatalog.mp.microsoft.com^
+@@||purchase.md.mp.microsoft.com^
+@@||licensing.mp.microsoft.com^
+@@||storeedgefd.dsx.mp.microsoft.com^
+@@||windowsstore.com^
+@@||ws.microsoft.com^
+@@||sls.update.microsoft.com^
+@@||fe3cr.delivery.mp.microsoft.com^
