@@ -39,3 +39,12 @@
 @@||ntservicepack.microsoft.com^
 @@||wustat.windows.com^
 @@||go.microsoft.com^
+@@||msftncsi.com^
+@@||activation.sls.microsoft.com^
+@@||validation.sls.microsoft.com^
+@@||mp.microsoft.com^
+@@||crl.microsoft.com^
+@@||mscrl.microsoft.com^
+@@||microsoft.com^
+@@||go.microsoft.com^
+@@||login.live.com^
