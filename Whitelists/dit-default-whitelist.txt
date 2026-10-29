@@ -59,3 +59,4 @@
 @@||browser.pipe.aria.microsoft.com^
 @@||web.vortex.data.microsoft.com^
 @@||target.microsoft.com^
+@@||r.openai.com
