@@ -61,3 +61,4 @@
 @@||target.microsoft.com^
 @@||r.openai.com
 @@||3cx.blue^
+@@||my3cx.de^
