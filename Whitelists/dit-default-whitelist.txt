@@ -1,65 +1,243 @@
-! Title: Whitelist by dacapo it solutions
-! Description: Freigabe bestimmter Domains
-! Version: 1.0.0
+! Title: dacapo IT solutions - Default Allowlist
+! Description: DNS exceptions for updates, security and business services.
+! Version: 1.1.0
 ! Homepage: https://www.dacapo-it.de
-! Last modified: 2025-05-06T00:00:00.000Z
-!
-! Compiled manually for AdGuard
+! Last modified: 2026-11-26
+! Compiled manually for AdGuard Home
+! DNS exceptions include subdomains and can override other filtering rules.
 
-@@||dacapo-it.de^
-@@||s4.highti.com^
-@@||srv.highti.com^
-@@||analytics.google.com^
-@@||.t-online.de^
-@@||rt.t-online.de^
-@@||sslout.de^
-@@||apple.com^
-@@||icloud.com^
-@@||cdn-apple.com^
-@@||itunes.apple.com^
-@@||push.apple.com^
-@@||mzstatic.com^
-@@||apple-mapkit.com^
-@@||gs.apple.com^
-@@||albert.apple.com^
-@@||humb.apple.com^
-@@||captive.apple.com^
-@@||deviceenrollment.apple.com^
-@@||deviceservices-external.apple.com^
-@@||gdmf.apple.com^
-@@||mesu.apple.com^
-@@||appldnld.apple.com^
-@@||download.windowsupdate.com^
-@@||update.microsoft.com^
+! Microsoft: REQUIRED_UPDATE_ENDPOINT
 @@||windowsupdate.com^
-@@||dl.delivery.mp.microsoft.com^
-@@||windowsupdate.microsoft.com^
-@@||windowsupdate.microsoft.com^
 @@||delivery.mp.microsoft.com^
-@@||download.microsoft.com^
+@@||update.microsoft.com^
+@@||tsfe.trafficshaping.dsp.mp.microsoft.com^
+@@||adl.windows.com^
+@@||api.cdp.microsoft.com^
+@@||emdl.ws.microsoft.com^
+@@||officecdn.microsoft.com^
+@@||windowsupdate.microsoft.com^
 @@||ntservicepack.microsoft.com^
 @@||wustat.windows.com^
+
+! Microsoft: REQUIRED_SECURITY_ENDPOINT
+@@||definitionupdates.microsoft.com^
+@@||download.microsoft.com^
 @@||go.microsoft.com^
+@@||www.microsoft.com^
+@@||wdcp.microsoft.com^
+@@||wdcpalt.microsoft.com^
+@@||wd.microsoft.com^
+
+! Microsoft: REQUIRED_DEPENDENCY
+@@||crl.microsoft.com^
+@@||login.live.com^
+@@||logincdn.msauth.net^
+@@||licensing.mp.microsoft.com^
+@@||storeedgefd.dsx.mp.microsoft.com^
+@@||displaycatalog.mp.microsoft.com^
+@@||storecatalogrevocation.storequality.microsoft.com^
+
+! Microsoft licensing, certificate and connectivity compatibility
 @@||msftncsi.com^
 @@||activation.sls.microsoft.com^
 @@||validation.sls.microsoft.com^
-@@||mp.microsoft.com^
-@@||crl.microsoft.com^
 @@||mscrl.microsoft.com^
-@@||microsoft.com^
-@@||go.microsoft.com^
-@@||login.live.com^
-@@||displaycatalog.mp.microsoft.com^
 @@||purchase.md.mp.microsoft.com^
-@@||licensing.mp.microsoft.com^
-@@||storeedgefd.dsx.mp.microsoft.com^
 @@||windowsstore.com^
-@@||ws.microsoft.com^
-@@||sls.update.microsoft.com^
-@@||fe3cr.delivery.mp.microsoft.com^
-@@||browser.pipe.aria.microsoft.com^
-@@||web.vortex.data.microsoft.com^
-@@||target.microsoft.com^
-@@||r.openai.com
+
+! Apple: REQUIRED_DEPENDENCY
+@@||albert.apple.com^
+@@||captive.apple.com^
+@@||humb.apple.com^
+@@||static.ips.apple.com^
+@@||tbsc.apple.com^
+@@||time-ios.apple.com^
+@@||time.apple.com^
+@@||time-macos.apple.com^
+@@||push.apple.com^
+@@||deviceenrollment.apple.com^
+@@||deviceservices-external.apple.com^
+@@||identity.apple.com^
+@@||iprofiles.apple.com^
+@@||mdmenrollment.apple.com^
+@@||setup.icloud.com^
+@@||appattest.apple.com^
+@@||axm-servicediscovery.apple.com^
+@@||appleid.cdn-apple.com^
+@@||idmsa.apple.com^
+@@||account.apple.com^
+@@||gsa.apple.com^
+
+! Apple: REQUIRED_UPDATE_ENDPOINT
+@@||gs.apple.com^
+@@||gdmf.apple.com^
+@@||itunes.apple.com^
+@@||mzstatic.com^
+@@||appldnld.apple.com^
+@@||configuration.apple.com^
+@@||gg.apple.com^
+@@||ig.apple.com^
+@@||mesu.apple.com^
+@@||oscdn.apple.com^
+@@||osrecovery.apple.com^
+@@||skl.apple.com^
+@@||swcdn.apple.com^
+@@||swdist.apple.com^
+@@||swdownload.apple.com^
+@@||swscan.apple.com^
+@@||updates-http.cdn-apple.com^
+@@||updates.cdn-apple.com^
+@@||xp.apple.com^
+@@||gdmf-ados.apple.com^
+@@||gsra.apple.com^
+@@||wkms-public.apple.com^
+@@||fcs-keys-pub-prod.cdn-apple.com^
+@@||apps.apple.com^
+
+! Apple: REQUIRED_SECURITY_ENDPOINT
+! api.apple-cloudkit.com: App notarization. gateway.icloud.com: XProtect content.
+@@||ppq.apple.com^
+@@||api.apple-cloudkit.com^
+@@||token.safebrowsing.apple^
+@@||gateway.icloud.com^
+@@||certs.apple.com^
+@@||crl.apple.com^
+@@||crl3.digicert.com^
+@@||crl4.digicert.com^
+@@||ocsp.apple.com^
+@@||ocsp.digicert.cn^
+@@||ocsp.digicert.com^
+@@||ocsp2.apple.com^
+@@||valid.apple.com^
+
+! Microsoft enterprise security - MDE standard EDR and control
+@@||winatp-gw-cus.microsoft.com^
+@@||winatp-gw-eus.microsoft.com^
+@@||winatp-gw-cus3.microsoft.com^
+@@||winatp-gw-eus3.microsoft.com^
+@@||winatp-gw-aec0a.microsoft.com^
+@@||winatp-gw-aen0a.microsoft.com^
+@@||winatp-gw-neu.microsoft.com^
+@@||winatp-gw-weu.microsoft.com^
+@@||winatp-gw-neu3.microsoft.com^
+@@||winatp-gw-weu3.microsoft.com^
+@@||winatp-gw-uks.microsoft.com^
+@@||winatp-gw-ukw.microsoft.com^
+@@||winatp-gw-aue.microsoft.com^
+@@||winatp-gw-aus.microsoft.com^
+
+! Microsoft enterprise security - MDE streamlined and SmartScreen
+@@||endpoint.security.microsoft.com^
+@@||smartscreen-prod.microsoft.com^
+@@||smartscreen.microsoft.com^
+@@||checkappexec.microsoft.com^
+@@||urs.microsoft.com^
+@@||reflector.defender.microsoft.com^
+
+! Microsoft enterprise security - configuration services
+@@||config.edge.skype.com^
+@@||ecs.office.com^
+
+! Microsoft enterprise updates - WUfB reporting and diagnostics
+@@||settings-win.data.microsoft.com^
+@@||oca.telemetry.microsoft.com^
+@@||v10.vortex-win.data.microsoft.com^
+
+! Microsoft enterprise updates - Windows Autopatch
+@@||mmdcustomer.microsoft.com^
+@@||mmdls.microsoft.com^
+@@||devicelistenerprod.microsoft.com^
+@@||devicelistenprod.eudb.microsoft.com^
+@@||device.autopatch.microsoft.com^
+@@||services.autopatch.microsoft.com^
+@@||login.windows.net^
+
+! Microsoft device management - Intune and delivery
+@@||manage.microsoft.com^
+@@||dm.microsoft.com^
+@@||do.dsp.mp.microsoft.com^
+@@||account.live.com^
+
+! Microsoft authentication - Entra and identity delivery
+@@||login.microsoftonline.com^
+@@||graph.windows.net^
+@@||enterpriseregistration.windows.net^
+@@||aadcdn.msauth.net^
+@@||aadcdn.msftauth.net^
+@@||alcdn.msauth.net^
+
+! Microsoft virtual desktops - AVD service and client updates
+@@||wvd.microsoft.com^
+@@||windows.cloud.microsoft^
+@@||windows.static.microsoft^
+@@||cdn.office.net^
+@@||graph.microsoft.com^
+
+! Microsoft virtual desktops - agent, activation and certificates
+@@||prod.warm.ingest.monitor.core.windows.net^
+@@||gcs.prod.monitoring.core.windows.net^
+@@||azkms.core.windows.net^
+@@||mrsglobalsteus2prod.blob.core.windows.net^
+@@||oneocsp.microsoft.com^
+@@||aikcertaia.microsoft.com^
+@@||microsoftaik.azure.net^
+@@||azcsprodeusaikpublish.blob.core.windows.net^
+
+! Microsoft virtual desktops - Windows 365 provisioning
+@@||infra.windows365.microsoft.com^
+@@||global.azure-devices-provisioning.net^
+@@||hm-iot-in-prod-prap01.azure-devices.net^
+@@||hm-iot-in-prod-prau01.azure-devices.net^
+@@||hm-iot-in-prod-preu01.azure-devices.net^
+@@||hm-iot-in-prod-prna01.azure-devices.net^
+@@||hm-iot-in-prod-prna02.azure-devices.net^
+@@||hm-iot-in-2-prod-preu01.azure-devices.net^
+@@||hm-iot-in-2-prod-prna01.azure-devices.net^
+@@||hm-iot-in-3-prod-preu01.azure-devices.net^
+@@||hm-iot-in-3-prod-prna01.azure-devices.net^
+@@||hm-iot-in-4-prod-prna01.azure-devices.net^
+
+! Microsoft connectivity checks - current endpoint
+@@||www.msftconnecttest.com^
+
+! Microsoft compatibility - legacy security and update reporting
+@@||spynet2.microsoft.com^
+@@||spynetalt.microsoft.com^
+@@||statsfe1.ws.microsoft.com^
+@@||statsfe2.ws.microsoft.com^
+
+! Apple content caching - registration, configuration and reporting
+@@||lcdn-registration.apple.com^
+@@||suconfig.apple.com^
+@@||xp-cdn.apple.com^
+@@||lcdn-locator.apple.com^
+
+! Microsoft 365 Apps - documented CDN and update dependencies
+@@||officecdn.microsoft.com.edgesuite.net^
+@@||otelrules.azureedge.net^
+
+! Microsoft enterprise security, reporting and diagnostics
+@@||events.data.microsoft.com^
+
+! Business service compatibility
+@@||dacapo-it.de^
+@@||s4.highti.com^
+@@||srv.highti.com^
+@@||apple-mapkit.com^
 @@||3cx.blue^
 @@||my3cx.de^
+
+! External SMTP service for notifications
+@@||sslout.de^
+
+! OpenAI email redirects and notification links
+@@||r.openai.com^
+
+! Application compatibility exceptions
+@@||analytics.google.com^
+@@||rt.t-online.de^
+@@||target.microsoft.com^
+@@||web.vortex.data.microsoft.com^
+
+! Microsoft Intune Remote Help compatibility
+@@||browser.pipe.aria.microsoft.com^

@@ -1,10 +1,16 @@
-! Title: Blocklist by dacapo it solutions
-! Description: Blockierung auffälliger FQDNs
-! Version: 1.0.0
+! Title: dacapo IT solutions - Default Blocklist
+! Description: Supplementary DNS protection against unwanted software and malicious downloads.
+! Version: 1.1.0
 ! Homepage: https://www.dacapo-it.de
-! Last modified: 2025-05-06T00:00:00.000Z
-!
-! Compiled manually for AdGuard
+! Last modified: 2026-11-26
+! Compiled manually for AdGuard Home
 
+! Unwanted browser infrastructure
 ||epibrowser.com^
-||api.epibrowser.com^
+||wavebrowser.co^
+
+! Support scams and unwanted software distribution
+||driver-fixer.com^
+
+! Trojanized software distribution; legitimate project: 7-zip.org
+||7zip.com^
